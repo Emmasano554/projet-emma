@@ -1,89 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-    <title>Menu</title>
+    <meta charset="UTF-8">
+    <title>Mon Tableau des TP</title>
+    <style>
+        /* Fond de la page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9 !important; /* Force le fond clair de la maquette */
+            margin: 20px;
+        }
+
+        /* Le conteneur blanc avec ombre */
+        .styled-table-container {
+            background-color: #ffffff !important;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            max-width: 950px;
+            margin: 20px auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+
+        /* Ligne du haut (En-tête grise) */
+        th {
+            background-color: #f1f1f1 !important; /* Force le gris clair */
+            color: #333333 !important;
+            font-weight: bold;
+            text-align: left;
+            padding: 14px 15px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        /* Les lignes de données */
+        td {
+            padding: 14px 15px;
+            border-bottom: 1px solid #eeeeee;
+            color: #555555 !important;
+            background-color: #ffffff;
+        }
+
+        /* Couleur au survol */
+        tr:hover td {
+            background-color: #f9f9f9 !important;
+        }
+    </style>
 </head>
-
 <body>
-    <center>
-        <ul id="menu">
-            <a href="page1.html" TARGET="affichage">
-                <li>Page 1</li>
-            </a>
-            <a href="tp1.html" TARGET="affichage">
-                <li>TP1</li>
-            </a>
-            <a href="siteweb.html" TARGET="affichage">
-                <li>TP2</li>
-            </a>
-            <a href="tpliste.html" TARGET="affichage">
-                <li>TPLISTE</li>
-            </a>
-            <a href="tptableau.html" TARGET="affichage">
-                <li>TP TABLEAU</li>
-            </a>
-            <a href="tpformulaire.html" TARGET="affichage">
-                <li>TP Formulaire</li>
-            </a>
-            <a href="tableau.html" TARGET="affichage">
-                <li>TABLEAU</li>
-            </a>
-            <a href="cv.html" TARGET="affichage">
-                <li>CV</li>
-            </a>
-        </ul>
-    </center>
 
-    <!--
-    <script>
-        var count=0;
-        let menu = document.getElementById("menu");
-        let btn = document.getElementById("clicker");
-        let count=true;
-        if(count){ 
-        btn.addEventListener("click", ()=>{
-            menu.style.display = "block";
-        });
-        count=false;
-    }
-    </script>
--->
+    <div class="styled-table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Code TP</th>
+                    <th>Nom du Projet</th>
+                    <th>Technologie</th>
+                    <th>Statut</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><b>TP1</b></td>
+                    <td>Mise en page de base</td>
+                    <td>HTML5</td>
+                    <td>Terminé</td>
+                </tr>
+                <tr>
+                    <td><b>TP2</b></td>
+                    <td>Création de listes</td>
+                    <td>HTML5</td>
+                    <td>Terminé</td>
+                </tr>
+                <tr>
+                    <td><b>TPLISTE</b></td>
+                    <td>Listes imbriquées et définitions</td>
+                    <td>HTML5</td>
+                    <td>Terminé</td>
+                </tr>
+                <tr>
+                    <td><b>TP TABLEAU</b></td>
+                    <td>Structure de données et alignements</td>
+                    <td>HTML5 / CSS</td>
+                    <td>Terminé</td>
+                </tr>
+                <tr>
+                    <td><b>TP Formulaire</b></td>
+                    <td>Champs de saisie et bouton de contact</td>
+                    <td>HTML5</td>
+                    <td>Terminé</td>
+                </tr>
+                <tr>
+                    <td><b>TABLEAU</b></td>
+                    <td>Gestion des fusions de lignes et colonnes</td>
+                    <td>HTML5</td>
+                    <td>Terminé</td>
+                </tr>
+                <tr>
+                    <td><b>CV</b></td>
+                    <td>Mon Curriculum Vitae en ligne</td>
+                    <td>HTML5 / CSS</td>
+                    <td>Terminé</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
 </body>
-<style>
-    body {
-        font-family: 'montserrat';
-    }
-
-    h2 {
-        text-align: center;
-    }
-
-    a {
-        text-align: center;
-        font-weight: 600;
-        border-radius: 10px;
-        text-decoration: none;
-    }
-
-    li {
-        list-style-type: none;
-        background-color: blue;
-        background-color: linear left-to-right();
-        margin-bottom: 5px;
-        padding: 10px;
-        color: rgb(255, 255, 255);
-        font-weight: 700;
-        border: none;
-        border-radius: 10px;
-        width: 150px;
-    }
-
-    li:hover {
-        background-color: rgb(0, 0, 0);
-        transition: ease-in 0.2s;
-        transform: translate-x(15deg);
-    }
-</style>
-
 </html>
