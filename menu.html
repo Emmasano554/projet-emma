@@ -1,69 +1,89 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
     <title>Menu</title>
-    <style>
-        /* --- Styles Généraux --- */
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            background-color: #f7f5f0; /* Fond crème doux assorti au thème */
-            margin: 0;
-            padding: 15px 10px;
-        }
-
-        /* Conteneur de la liste */
-        #menu {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            gap: 8px; /* Espace régulier entre les boutons */
-        }
-
-        /* --- Le Style des Liens (Boutons) --- */
-        #menu a {
-            display: block;
-            text-decoration: none;
-            color: #5c4a3c; /* Texte marron foncé doux */
-            font-weight: 600;
-            font-size: 15px;
-            padding: 12px 20px;
-            border-radius: 6px; /* Angles légèrement arrondis comme la maquette */
-            transition: all 0.25s ease;
-            text-align: left; /* Aligné à gauche avec une marge */
-        }
-
-        /* --- Effet au Survol de la souris --- */
-        #menu a:hover {
-            background-color: #eaddca; /* Fond crème plus foncé au survol */
-            color: #2c1d11; /* Texte encore plus sombre */
-            padding-left: 25px; /* Petit effet de décalage fluide vers la droite */
-        }
-
-        /* --- Style spécial pour l'élément actif / sélectionné --- */
-        /* Par exemple, si vous voulez mettre en valeur la "Page 1" ou le CV */
-        #menu a.active {
-            background-color: #4a6b5d; /* Vert canard/forêt très élégant */
-            color: #ffffff; /* Texte blanc pour le contraste */
-        }
-    </style>
 </head>
 
 <body>
+    <center>
+        <ul id="menu">
+            <a href="page1.html" TARGET="affichage">
+                <li>Page 1</li>
+            </a>
+            <a href="tp1.html" TARGET="affichage">
+                <li>TP1</li>
+            </a>
+            <a href="siteweb.html" TARGET="affichage">
+                <li>TP2</li>
+            </a>
+            <a href="tpliste.html" TARGET="affichage">
+                <li>TPLISTE</li>
+            </a>
+            <a href="tptableau.html" TARGET="affichage">
+                <li>TP TABLEAU</li>
+            </a>
+            <a href="tpformulaire.html" TARGET="affichage">
+                <li>TP Formulaire</li>
+            </a>
+            <a href="tableau.html" TARGET="affichage">
+                <li>TABLEAU</li>
+            </a>
+            <a href="cv.html" TARGET="affichage">
+                <li>CV</li>
+            </a>
+        </ul>
+    </center>
 
-    <ul id="menu">
-        <li><a href="page1.html" TARGET="affichage" class="active">Page 1</a></li>
-        <li><a href="tp1.html" TARGET="affichage">TP1</a></li>
-        <li><a href="siteweb.html" TARGET="affichage">TP2</a></li>
-        <li><a href="tpliste.html" TARGET="affichage">TPLISTE</a></li>
-        <li><a href="tptableau.html" TARGET="affichage">TP TABLEAU</a></li>
-        <li><a href="tpformulaire.html" TARGET="affichage">TP Formulaire</a></li>
-        <li><a href="tableau.html" TARGET="affichage">TABLEAU</a></li>
-        <li><a href="cv.html" TARGET="affichage">CV</a></li>
-    </ul>
-
+    <!--
+    <script>
+        var count=0;
+        let menu = document.getElementById("menu");
+        let btn = document.getElementById("clicker");
+        let count=true;
+        if(count){ 
+        btn.addEventListener("click", ()=>{
+            menu.style.display = "block";
+        });
+        count=false;
+    }
+    </script>
+-->
 </body>
+<style>
+    body {
+        font-family: 'montserrat';
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    a {
+        text-align: center;
+        font-weight: 600;
+        border-radius: 10px;
+        text-decoration: none;
+    }
+
+    li {
+        list-style-type: none;
+        background-color: blue;
+        background-color: linear left-to-right();
+        margin-bottom: 5px;
+        padding: 10px;
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+        border: none;
+        border-radius: 10px;
+        width: 150px;
+    }
+
+    li:hover {
+        background-color: rgb(0, 0, 0);
+        transition: ease-in 0.2s;
+        transform: translate-x(15deg);
+    }
+</style>
+
 </html>
