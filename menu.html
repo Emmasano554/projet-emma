@@ -1,139 +1,91 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<title>Menu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOGNI Emmanuella - Site Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
+        body { background: #f0f4f8; display: flex; flex-direction: column; min-height: 100vh; }
+        
+        
+        header { background: #fff; border-bottom: 2px solid #0056b3; padding: 15px 40px; display: flex; justify-content: space-between; align-items: center; text-align: center; }
+        header img { height: 70px; }
+        header h1 { color: #002d62; font-size: 1.8rem; }
+        header h2 { color: #0066ff; font-size: 1.3rem; margin-top: 5px; }
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+        .container { display: flex; flex: 1; padding: 25px; gap: 25px; max-width: 1400px; width: 100%; margin: 0 auto; }
+        
+    
+        aside { width: 240px; display: flex; flex-direction: column; gap: 10px; }
+        .btn { display: flex; align-items: center; gap: 15px; background: #001f4d; color: #fff; padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: 500; transition: 0.2s; }
+        .btn i { width: 20px; font-size: 1.1rem; }
+        .btn.active { background: #0066ff; }
+        .btn:hover:not(.active) { background: #003380; transform: translateX(4px); }
 
-<style>
-body{
-    margin:0;
-    padding:20px;
-    background:#f4f4f4;
-    font-family:Georgia, serif;
-}
+        
+        main { flex: 1; background: #fff; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.04); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px; text-align: center; }
+        .icon-box { background: #e6f0ff; width: 90px; height: 90px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #0066ff; font-size: 2.5rem; margin-bottom: 20px; }
+        main h3 { color: #001f4d; font-size: 2rem; margin-bottom: 15px; }
+        main p { color: #4a5568; max-width: 550px; line-height: 1.6; font-size: 1.05rem; margin-bottom: 25px; }
+        .decor { display: flex; align-items: center; gap: 15px; width: 100%; max-width: 350px; color: #0066ff; }
+        .line { height: 1px; background: linear-gradient(to right, transparent, #0066ff, transparent); flex: 1; }
 
-#menu{
-    width:240px;
-    background:white;
-    border-radius:15px;
-    box-shadow:0 3px 8px rgba(0,0,0,.15);
-    overflow:hidden;
-}
-
-#menu ul{
-    margin:0;
-    padding:0;
-}
-
-#menu li{
-    list-style:none;
-}
-
-#menu li a{
-    display:block;
-    text-decoration:none;
-    color:#222;
-    padding:15px 20px;
-    font-size:22px;
-    transition:.3s;
-}
-
-.titre{
-    background:#e5dcc5;
-    color:#80611d;
-    font-weight:bold;
-    text-align:center;
-    border-radius:15px 15px 0 0;
-}
-
-.titre:hover{
-    background:#d8ccb0;
-}
-
-.normal:hover{
-    background:#f3f3f3;
-    padding-left:28px;
-}
-
-.cv{
-    background:#2b6f72;
-    color:white!important;
-    border-radius:0 0 15px 15px;
-}
-
-.cv:hover{
-    background:#1d5b5d;
-}
-
-.fa-folder{
-    color:#b79b49;
-    margin-right:10px;
-}
-
-.fa-user{
-    margin-right:10px;
-}
-</style>
-
+        
+        footer { background: #001f4d; color: #fff; padding: 15px 40px; display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; }
+        footer a { color: #cbd5e1; text-decoration: none; margin: 0 10px; }
+        footer a:hover, .socials a:hover { color: #0066ff; }
+        .socials a { color: #fff; margin-left: 15px; font-size: 1.1rem; }
+    </style>
 </head>
 <body>
 
-<div id="menu">
+    <header>
+        <img src="logo_gauche.png" alt="Logo G">
+        <div>
+            <h1>Bienvenue dans mon site web</h1>
+            <h2>TOGNI Emmanuella</h2>
+        </div>
+        <img src="logo_droite.png" alt="Logo D">
+    </header>
 
-<ul>
+    <div class="container">
+        <aside>
+            <a href="#" class="btn active"><i class="fa-solid fa-house"></i> Page 1</a>
+            <a href="#" class="btn"><i class="fa-solid fa-file-code"></i> TP1</a>
+            <a href="#" class="btn"><i class="fa-solid fa-file-code"></i> TP2</a>
+            <a href="#" class="btn"><i class="fa-solid fa-list-ul"></i> TPLISTE</a>
+            <a href="#" class="btn"><i class="fa-solid fa-table-cells"></i> TP TABLEAU</a>
+            <a href="#" class="btn"><i class="fa-solid fa-pen-to-square"></i> TP Formulaire</a>
+            <a href="#" class="btn"><i class="fa-solid fa-table"></i> TABLEAU</a>
+            <a href="#" class="btn"><i class="fa-solid fa-user-tie"></i> CV</a>
+        </aside>
 
-<li class="titre">
-<a href="page1.html" target="affichage">Page 1</a>
-</li>
+        <main>
+            <div class="icon-box"><i class="fa-solid fa-desktop"></i></div>
+            <h3>Bienvenue !</h3>
+            <p>Ce site présente les différents travaux pratiques réalisés dans le cadre du cours de Web Design et CMS.</p>
+            <div class="decor">
+                <div class="line"></div><i class="fa-solid fa-snowflake"></i><div class="line"></div>
+            </div>
+        </main>
+    </div>
 
-<li>
-<a class="normal" href="tp1.html" target="affichage">
-<i class="fa-solid fa-folder"></i>TP1
-</a>
-</li>
-
-<li>
-<a class="normal" href="siteweb.html" target="affichage">
-<i class="fa-solid fa-folder"></i>TP2
-</a>
-</li>
-
-<li>
-<a class="normal" href="tpliste.html" target="affichage">
-TP LISTE
-</a>
-</li>
-
-<li>
-<a class="normal" href="tptableau.html" target="affichage">
-TP TABLEAU
-</a>
-</li>
-
-<li>
-<a class="normal" href="tpformulaire.html" target="affichage">
-TP FORMULAIRE
-</a>
-</li>
-
-<li>
-<a class="normal" href="tableau.html" target="affichage">
-TABLEAU
-</a>
-</li>
-
-<li>
-<a class="cv" href="cv.html" target="affichage">
-<i class="fa-solid fa-user"></i>CV
-</a>
-</li>
-
-</ul>
-
-</div>
+    <footer>
+        <div>© 2026 Emmanuella TOGNI | Tous droits réservés</div>
+        <div>
+            <a href="#"><i class="fa-solid fa-house"></i> Accueil</a>
+            <a href="#"><i class="fa-solid fa-folder-open"></i> Projets</a>
+            <a href="#"><i class="fa-solid fa-user"></i> Mon CV</a>
+        </div>
+        <div class="socials">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </footer>
 
 </body>
 </html>
