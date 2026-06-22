@@ -1,89 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
-    <title>Menu</title>
-</head>
+<meta charset="UTF-8">
+<title>Menu</title>
 
-<body>
-    <center>
-        <ul id="menu">
-            <a href="page1.html" TARGET="affichage">
-                <li>Page 1</li>
-            </a>
-            <a href="tp1.html" TARGET="affichage">
-                <li>TP1</li>
-            </a>
-            <a href="siteweb.html" TARGET="affichage">
-                <li>TP2</li>
-            </a>
-            <a href="tpliste.html" TARGET="affichage">
-                <li>TPLISTE</li>
-            </a>
-            <a href="tptableau.html" TARGET="affichage">
-                <li>TP TABLEAU</li>
-            </a>
-            <a href="tpformulaire.html" TARGET="affichage">
-                <li>TP Formulaire</li>
-            </a>
-            <a href="tableau.html" TARGET="affichage">
-                <li>TABLEAU</li>
-            </a>
-            <a href="cv.html" TARGET="affichage">
-                <li>CV</li>
-            </a>
-        </ul>
-    </center>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <!--
-    <script>
-        var count=0;
-        let menu = document.getElementById("menu");
-        let btn = document.getElementById("clicker");
-        let count=true;
-        if(count){ 
-        btn.addEventListener("click", ()=>{
-            menu.style.display = "block";
-        });
-        count=false;
-    }
-    </script>
--->
-</body>
 <style>
-    body {
-        font-family: 'montserrat';
-    }
+body{
+    margin:0;
+    padding:20px;
+    background:#f4f4f4;
+    font-family:Georgia, serif;
+}
 
-    h2 {
-        text-align: center;
-    }
+#menu{
+    width:240px;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 3px 8px rgba(0,0,0,.15);
+    overflow:hidden;
+}
 
-    a {
-        text-align: center;
-        font-weight: 600;
-        border-radius: 10px;
-        text-decoration: none;
-    }
+#menu ul{
+    margin:0;
+    padding:0;
+}
 
-    li {
-        list-style-type: none;
-        background-color: blue;
-        background-color: linear left-to-right();
-        margin-bottom: 5px;
-        padding: 10px;
-        color: rgb(255, 255, 255);
-        font-weight: 700;
-        border: none;
-        border-radius: 10px;
-        width: 150px;
-    }
+#menu li{
+    list-style:none;
+}
 
-    li:hover {
-        background-color: rgb(0, 0, 0);
-        transition: ease-in 0.2s;
-        transform: translate-x(15deg);
-    }
+#menu li a{
+    display:block;
+    text-decoration:none;
+    color:#222;
+    padding:15px 20px;
+    font-size:22px;
+    transition:.3s;
+}
+
+.titre{
+    background:#e5dcc5;
+    color:#80611d;
+    font-weight:bold;
+    text-align:center;
+    border-radius:15px 15px 0 0;
+}
+
+.titre:hover{
+    background:#d8ccb0;
+}
+
+.normal:hover{
+    background:#f3f3f3;
+    padding-left:28px;
+}
+
+.cv{
+    background:#2b6f72;
+    color:white!important;
+    border-radius:0 0 15px 15px;
+}
+
+.cv:hover{
+    background:#1d5b5d;
+}
+
+.fa-folder{
+    color:#b79b49;
+    margin-right:10px;
+}
+
+.fa-user{
+    margin-right:10px;
+}
 </style>
 
+</head>
+<body>
+
+<div id="menu">
+
+<ul>
+
+<li class="titre">
+<a href="page1.html" target="affichage">Page 1</a>
+</li>
+
+<li>
+<a class="normal" href="tp1.html" target="affichage">
+<i class="fa-solid fa-folder"></i>TP1
+</a>
+</li>
+
+<li>
+<a class="normal" href="siteweb.html" target="affichage">
+<i class="fa-solid fa-folder"></i>TP2
+</a>
+</li>
+
+<li>
+<a class="normal" href="tpliste.html" target="affichage">
+TP LISTE
+</a>
+</li>
+
+<li>
+<a class="normal" href="tptableau.html" target="affichage">
+TP TABLEAU
+</a>
+</li>
+
+<li>
+<a class="normal" href="tpformulaire.html" target="affichage">
+TP FORMULAIRE
+</a>
+</li>
+
+<li>
+<a class="normal" href="tableau.html" target="affichage">
+TABLEAU
+</a>
+</li>
+
+<li>
+<a class="cv" href="cv.html" target="affichage">
+<i class="fa-solid fa-user"></i>CV
+</a>
+</li>
+
+</ul>
+
+</div>
+
+</body>
 </html>
